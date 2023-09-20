@@ -5,14 +5,4 @@ acl:
       entries:
         - RETIREMENT
         - PSYCHIATRIC_HOUSE
-    - id: memberDataSyncRoles
-      category: ROLE
-      entries:
-        - PSYCHIATRIC_HOUSE
-        - RETIREMENT
-    - id: memberDataAsyncRoles
-      category: ROLE
-      entries:
-        - PSYCHIATRIC_HOUSE
-        - RETIREMENT
-        - REVAC
+
