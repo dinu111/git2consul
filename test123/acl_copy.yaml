@@ -1,8 +1,1 @@
 acl:
-  alias:
-    - id: bruFacAsyncRoles
-      category: ROLE
-      entries:
-        - RETIREMENT
-        - PSYCHIATRIC_HOUSE
-
