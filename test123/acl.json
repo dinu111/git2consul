@@ -1,0 +1,82 @@
+{
+    "acl": {
+      "alias": [
+        {
+          "id": "bruFacAsyncRoles",
+          "category": "ROLE",
+          "entries": [
+            "RETIREMENT",
+            "PSYCHIATRIC_HOUSE"
+          ]
+        },
+        {
+          "id": "memberDataSyncRoles",
+          "category": "ROLE",
+          "entries": [
+            "PSYCHIATRIC_HOUSE",
+            "RETIREMENT"
+          ]
+        },
+        {
+          "id": "memberDataAsyncRoles",
+          "category": "ROLE",
+          "entries": [
+            "PSYCHIATRIC_HOUSE",
+            "RETIREMENT",
+            "REVAC"
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "brufac",
+          "messageNames": [
+            "BRUFAC"
+          ],
+          "paradigm": "GASYNC12",
+          "rule": "user.hasRoleAlias('bruFacAsyncRoles')"
+        },
+        {
+          "id": "memberDataSync",
+          "messageNames": [
+            "MDA"
+          ],
+          "paradigm": "GSYNC",
+          "rule": "(user.hasRoleAlias('memberDataSyncRoles'))"
+        },
+        {
+          "id": "memberDataAsync",
+          "messageNames": [
+            "MDA"
+          ],
+          "messageGroups": [
+            "MDA"
+          ],
+          "paradigm": "GASYNC",
+          "rule": "(user.hasRoleAlias('memberDataAsyncRoles'))"
+        }
+      ]
+    },
+    "licenses": [
+      {
+        "id": "atos-robot",
+        "pwd": "yuJDHSuzf7hT"
+      },
+      {
+        "id": "cin-robot",
+        "pwd": "hd767DSJlmp5"
+      },
+      {
+        "id": "siemens-robot",
+        "pwd": "jXfLESMRW2CV"
+      },
+      {
+        "id": "iriscarenet",
+        "pwd": "iriscarenet"
+      },
+      {
+        "id": "atos-bdd",
+        "pwd": "hezdbhzafbz"
+      }
+    ]
+  }
